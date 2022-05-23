@@ -28,8 +28,6 @@ export const TodoItem  = ({ id, title, completed } : IMytodo) => {
 	}
 	const handleEditing=()=>{
 		
-				
-
 		dispatch({
 			type:EDIT_TODO,
 			payload:id

@@ -83,22 +83,11 @@ const reducerTodo=(state=initialState,action:Actions) => {
                 todos:[...state.todos,action.payload] 
               }
         case EDIT_TODO:
-                { 
-                //     const oldData=[...state.todos]
-                //     const index=oldData.findIndex((todo)=>todo.id===action.payload)
-                    
-                //    console.log(index)
-                    
+                {   
                     return{
                         ...state,
-                    editId:action.payload, 
-
-                    
+                    editId:action.payload,
                     }
-                    
-                    
-                    
-
 
                     // ...state,
                     // todos: updateTodo(state.todos, action.payload.id, action.payload.text),
